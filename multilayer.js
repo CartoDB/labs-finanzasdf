@@ -37,22 +37,23 @@ multilayer.controller('SelectorCtrl', function ($scope) {
     };
 
     cartodb.createVis('map', baseVizJsonUrl, {
-        zoom: 10,
-        center_lat: 19.42,
-        center_lon: -99.12,
+        zoom: 14,
+        center_lat: 19.435586,
+        center_lon: -99.149473,
         loaderControl: false,
         zoomControl: false
     }).done(function (vis) {
         var map = vis.getNativeMap();
 
         var sql = new cartodb.SQL({user: user});
-        sql.execute("SELECT name, show, viz_json as vizjson, sql, cartocss, interactivity FROM " + table + " WHERE name IS NOT NULL")
+        sql.execute("SELECT name, show, viz_json as vizjson, sql, cartocss, interactivity FROM " + table + " WHERE name IS NOT NULL ORDER BY name ASC")
             .done(function (data) {
                 $scope.layers = data.rows;
                 for (var id = 0; id < $scope.layers.length; ++id) {
                     var layerOptions;
 
                     layer = $scope.layers[id];
+		    console.log(layer);
                     layer.id = id;
                     $scope.selectedLayers[id] = layer.show ? true : false;
                     if (layer.vizjson) {
