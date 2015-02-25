@@ -37,7 +37,7 @@ multilayer.controller('SelectorCtrl', function ($scope) {
     };
 
     cartodb.createVis('map', baseVizJsonUrl, {
-        zoom: 14,
+        zoom: 15,
         center_lat: 19.435586,
         center_lon: -99.149473,
         loaderControl: false,
