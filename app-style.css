@@ -53,7 +53,7 @@ input[type=checkbox]:checked+label{
     position: absolute;
     top: 20px;
     left: 20px;
-    bottom: 200px;
+    bottom: 100px;
     width: 280px;
     webkit-box-shadow: rgba(0,0,0,.2) 0 0 4px 2px;
     -moz-box-shadow: rgba(0,0,0,.2) 0 0 4px 2px;
@@ -83,8 +83,8 @@ input[type=checkbox]:checked+label{
 
 div.cartodb-zoom{
     position: absolute;
-    left: 0;
-    bottom: 50px;
+    right: 20px;
+    top: 50px;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x.ng-cloak {
