@@ -1,11 +1,11 @@
 {
-  "name": "labs-multilayer-mexico-df-demo",
+  "name": "labs-finanzasdf",
   "author": "Andrew Thompson <athompson@cartodb.com>",
-  "description": "Toggle layers in CartoDB",
+  "description": "A CartoDB demo using multiple data layers for Finanzas DF, Mexico",
   "version" : "0.0.1",
   "repository": {
         "type": "git",
-        "url": "https://github.com/CartoDB/labs-multilayer.git"
+        "url": "https://github.com/CartoDB/labs-finanzasdf.git"
     },
   "dependencies": {
     "http-server": "~0.7.4"
